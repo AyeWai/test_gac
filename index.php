@@ -1,5 +1,23 @@
 <?php
 
+//STRUCTURE BDD
+
+/*
+CREATE TABLE `tickets_appels` (
+    `cmpt_fact` VARCHAR(50) NOT NULL DEFAULT '0' COLLATE 'latin1_swedish_ci',
+    `num_facture` VARCHAR(50) NOT NULL DEFAULT '0' COLLATE 'latin1_swedish_ci',
+    `num_abonne` VARCHAR(50) NOT NULL DEFAULT '0' COLLATE 'latin1_swedish_ci',
+    `date` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+    `heure` VARCHAR(50) NOT NULL DEFAULT '0' COLLATE 'latin1_swedish_ci',
+    `vol_reel` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+    `vol_fact` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+    `type` VARCHAR(100) NOT NULL DEFAULT '0' COLLATE 'latin1_swedish_ci'
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+*/
+
 // Vérification de la ligne de commande
 if(count($argv) != 2) {
     echo "Usage: php index.php <string>";
